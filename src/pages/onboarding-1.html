@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NARA Music</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="/src/styles/global.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="/src/styles/animations.css"
+  >
+
+</head>
+
+<body class="font-['Inter'] bg-[#09090B]">
+
+  <main
+    id="app"
+    class="
+      relative
+      min-h-screen
+      overflow-hidden
+      bg-[#09090B]
+      transition-all
+      duration-700
+    "
+  >
+
+    <!-- Skip -->
+    <button
+      id="skipButton"
+      class="
+        absolute
+        top-[50px]
+        right-[30px]
+        z-30
+        text-[16px]
+        font-medium
+        text-[#A1A1AA]
+        active:text-[#EDE9FE]
+        transition-colors
+        duration-instant
+      "
+    >
+      Lewati
+    </button>
+
+    <!-- Content -->
+    <section
+      class="
+        flex
+        min-h-screen
+        flex-col
+        items-center
+      "
+    >
+
+      <!-- Hero -->
+      <div
+        class="
+          mt-[75px]
+          z-20
+          flex
+          justify-center
+          scale-100
+          -translate-y-[20px]
+        "
+      >
+
+        <img
+          src="/images/onboarding/1/BG.png"
+          alt="Onboarding Hero"
+          class="
+            w-full
+            h-full
+            object-cover
+          "
+        >
+
+      </div>
+
+      <!-- Title -->
+      <div
+        class="
+          mt-[-75px]
+          text-center
+          text-white
+          leading-[40px]
+        "
+      >
+
+        <h1
+          class="
+            text-[32px]
+            font-bold
+          "
+        >
+          Musik untuk
+        </h1>
+
+        <h1
+          class="
+            text-[32px]
+            font-bold
+          "
+        >
+          setiap momen
+        </h1>
+
+      </div>
+
+      <!-- Description -->
+      <div
+        class="
+          mt-[12px]
+          text-center
+          text-white
+          leading-[30px]
+          -translate-y-[-10px]
+        "
+      >
+
+        <p
+          class="
+            text-[20px]
+          "
+        >
+          Temukan lagu yang pas untuk
+          <br>
+          suasana hatimu.
+        </p>
+
+      </div>
+
+      <!-- Pagination -->
+      <div
+        class="
+          mt-[32px]
+          flex
+          items-center
+          gap-[12px]
+          -translate-y-[-30px]
+        "
+      >
+
+        <div
+          class="
+            h-[10px]
+            w-[10px]
+            rounded-full
+            bg-white
+          "
+        ></div>
+
+        <div
+          class="
+            h-[10px]
+            w-[10px]
+            rounded-full
+            bg-[#A1A1AA]
+          "
+        ></div>
+
+      </div>
+
+      <!-- Tombol -->
+       <div
+       class="
+         -translate-y-[-30px]
+         z-20
+       "
+      >
+
+      <!-- CTA -->
+      <button
+        id="nextButton"
+        class="
+          mt-[32px]
+          h-[56px]
+          w-[358px]
+          rounded-[12px]
+          bg-[#7C3AED]
+          text-[16px]
+          font-semibold
+          text-white
+          transition-all
+          duration-300
+          hover:bg-[#8B5CF6]
+          active:bg-[#6D28D9]
+          active:scale-[0.98]
+          hover:scale-[1.02]
+        "
+      >
+        Lanjut
+      </button>
+
+    </section>
+
+  </main>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

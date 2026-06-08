@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Masuk - NARA Music</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Styles -->
+  <link
+    rel="stylesheet"
+    href="../styles/global.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles/animations.css"
+  >
+
+</head>
+
+<body class="font-['Inter']">
+
+  <main
+    class="
+      flex
+      items-center
+      justify-center
+      w-screen
+      h-screen
+      bg-white
+      overflow-hidden
+    "
+  >
+
+    <!-- iPhone Frame -->
+    <section
+      class="
+        relative
+        w-[390px]
+        h-[844px]
+        overflow-hidden
+        rounded-[55px]
+        border-[10px]
+        border-black
+        bg-[#050505]
+        shadow-2xl
+      "
+    >
+
+      <!-- Status Bar -->
+      <header
+        class="
+          absolute
+          top-[18px]
+          left-0
+          z-40
+          flex
+          items-center
+          justify-between
+          w-full
+          px-[28px]
+          text-white
+        "
+      >
+
+        <span
+          class="
+            text-[15px]
+            font-semibold
+          "
+        >
+          9:41
+        </span>
+
+        <div
+          class="
+            flex
+            items-center
+            gap-[6px]
+          "
+        >
+
+          <img
+            src="/icons/signal.svg"
+            alt="Signal"
+            class="h-[12px]"
+          >
+
+          <img
+            src="/icons/wifi.svg"
+            alt="WiFi"
+            class="h-[12px]"
+          >
+
+          <img
+            src="/icons/battery.svg"
+            alt="Battery"
+            class="h-[12px]"
+          >
+
+        </div>
+
+      </header>
+
+      <!-- Dynamic Island -->
+      <div
+        class="
+          absolute
+          top-[12px]
+          left-1/2
+          z-50
+          w-[120px]
+          h-[35px]
+          rounded-full
+          bg-black
+          -translate-x-1/2
+        "
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="
+          flex
+          flex-col
+          h-full
+          px-4
+          pt-[110px]
+          pb-[40px]
+        "
+      >
+
+        <!-- Title -->
+        <section>
+
+          <h1
+            class="
+              text-[32px]
+              font-bold
+              text-white
+            "
+          >
+            Selamat Datang
+            <br>
+            Kembali!
+          </h1>
+
+          <p
+            class="
+              mt-4
+              text-[20px]
+              text-white
+            "
+          >
+            Masuk untuk melanjutkan
+          </p>
+
+        </section>
+
+        <!-- Email -->
+        <section class="mt-8">
+
+          <label
+            class="
+              block
+              mb-2
+              text-[16px]
+              text-white
+            "
+          >
+            Email atau Username
+          </label>
+
+          <input
+            type="text"
+            placeholder="nama@email.com"
+            class="
+              w-full
+              h-[56px]
+              px-6
+              rounded-[12px]
+              bg-[#1E1B2E]
+              border
+              border-[#2A2A3A]
+              text-white
+              placeholder:text-[#A1A1AA]
+              outline-none
+            "
+          >
+
+        </section>
+
+        <!-- Password -->
+        <section class="mt-2">
+
+          <label
+            class="
+              block
+              mb-2
+              text-[16px]
+              text-white
+            "
+          >
+            Kata Sandi
+          </label>
+
+          <div class="relative">
+
+            <input
+              id="password"
+              type="password"
+              placeholder="**********"
+              class="
+                w-full
+                h-[56px]
+                px-6
+                rounded-[12px]
+                bg-[#1E1B2E]
+                border
+                border-[#2A2A3A]
+                text-white
+                placeholder:text-[#A1A1AA]
+                outline-none
+              "
+            >
+
+            <button
+              id="togglePassword"
+              type="button"
+              class="
+                absolute
+                right-5
+                top-1/2
+                -translate-y-1/2
+                scale-[0.9]
+              "
+            >
+
+              <img
+                src="/icons/solar-eye-linear.svg"
+                alt="Show Password"
+                class="
+                  w-6
+                  h-6
+                "
+              >
+
+            </button>
+
+          </div>
+
+        </section>
+
+        <!-- Forgot Password -->
+        <div
+          class="
+            flex
+            justify-end
+            mt-1
+          "
+        >
+
+          <button
+            class="
+              text-[14px]
+              text-white
+            "
+          >
+            Lupa Kata Sandi?
+          </button>
+
+        </div>
+
+        <!-- Login Button -->
+        <button
+          class="
+            w-[358px]
+            h-[56px]
+            mt-8
+            rounded-[12px]
+            bg-[#7C3AED]
+            text-white
+            text-[20px]
+            font-semibold
+            transition-all
+            duration-300
+            hover:bg-[#A855F7]
+            active:scale-[0.98]
+          "
+        >
+          Masuk
+        </button>
+
+        <!-- Divider -->
+        <p
+          class="
+            mt-14
+            text-center
+            text-[18px]
+            text-white
+          "
+        >
+          atau masuk dengan
+        </p>
+
+        <!-- Google -->
+        <button
+          class="
+            flex
+            items-center
+            justify-center
+            gap-4
+            w-full
+            h-[72px]
+            mt-8
+            rounded-[24px]
+            bg-[#111120]
+            border
+            border-[#2A2744]
+            text-white
+            text-[18px]
+          "
+        >
+
+          <img
+            src="/icons/google.svg"
+            alt="Google"
+            class="
+              w-8
+              h-8
+            "
+          >
+
+          <span>
+            Lanjutkan dengan Google
+          </span>
+
+        </button>
+
+        <!-- Facebook -->
+        <button
+          class="
+            flex
+            items-center
+            justify-center
+            gap-4
+            w-full
+            h-[72px]
+            mt-6
+            rounded-[24px]
+            bg-[#111120]
+            border
+            border-[#2A2744]
+            text-white
+            text-[18px]
+          "
+        >
+
+          <img
+            src="/icons/facebook.svg"
+            alt="Facebook"
+            class="
+              w-8
+              h-8
+            "
+          >
+
+          <span>
+            Lanjutkan dengan Facebook
+          </span>
+
+        </button>
+
+        <!-- Footer -->
+        <div
+          class="
+            mt-auto
+            text-center
+          "
+        >
+
+          <span class="text-white">
+            Belum punya akun?
+          </span>
+
+          <a
+            href="./signup.html"
+            class="
+              ml-1
+              text-[#7C3AED]
+              font-medium
+            "
+          >
+            Daftar
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Home Indicator -->
+      <div
+        class="
+          absolute
+          bottom-[10px]
+          left-1/2
+          z-30
+          w-[148px]
+          h-[5px]
+          rounded-full
+          bg-white
+          -translate-x-1/2
+        "
+      ></div>
+
+    </section>
+
+  </main>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

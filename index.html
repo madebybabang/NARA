@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NARA Music</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="/src/styles/global.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="/src/styles/animations.css"
+  >
+
+</head>
+
+<body class="
+    font-['Inter'] 
+    bg-[#09090B]
+    m-0
+    overflow-hidden
+    "
+    >
+
+  <main
+    id="app"
+    class="
+      relative
+      min-h-dvh
+      overflow-hidden
+      bg-black
+    "
+  >
+
+    <!-- Orb -->
+    <img
+      src="/images/splash/splash-orb.png"
+      alt="Splash Orb"
+      class="
+        absolute
+        left-1/2
+        top-[2vh]
+        w-[115vw]
+        max-w-[850px]
+        -translate-x-1/2
+        object-contain
+      "
+    >
+
+    <!-- Content -->
+    <section
+      class="
+        flex
+        min-h-dvh
+        flex-col
+        items-center
+        justify-center
+        translate-y-[22vh]
+      "
+    >
+
+      <!-- Logo -->
+      <img
+        src="/images/logo/Logo-Teks-NARA.png"
+        alt="NARA Logo"
+        class="
+          w-[80vw]
+          max-w-[390px]
+          object-contain
+        "
+      >
+
+      <!-- Tagline -->
+      <div
+        class="
+          mt-10
+          text-center
+          text-white
+        "
+      >
+
+        <h1
+          class="
+            text-[20px]
+            font-bold
+            leading-tight
+          "
+        >
+          Feel Every Beat.
+        </h1>
+
+        <p
+          class="
+            text-[20px]
+            font-bold
+            leading-tight
+          "
+        >
+          Connect Through Music.
+        </p>
+
+      </div>
+
+      <!-- Loading -->
+      <div class="mt-8">
+
+        <div
+          class="
+            relative
+            w-[150px]
+            h-[10px]
+            overflow-hidden
+            rounded-full
+            bg-[#2A2A3A]
+          "
+        >
+
+          <div
+            class="
+              smart-loading
+              absolute
+              top-0
+              h-full
+              w-[40px]
+              rounded-full
+              bg-[#7C3AED]
+            "
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    alert(`
+Width: ${window.innerWidth}
+Height: ${window.innerHeight}
+DPR: ${window.devicePixelRatio}
+`);
+  </script>
+</body>
+
+</html>
