@@ -10,347 +10,447 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>NARA Music</title>
+  <title>NARA - Onboarding 2</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font -->
   <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
-  >
-
-  <!-- Styles -->
-  <link
-    rel="stylesheet"
-    href="../styles/global.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../styles/variables.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../styles/animations.css"
   >
 
 </head>
 
-<body class="font-['Inter']">
+<body
+  class="
+    bg-[#09090B]
+    font-['Inter']
+    overflow-hidden
+  "
+>
 
   <main
-    id="app"
     class="
-      flex
-      items-center
-      justify-center
-      w-screen
-      h-screen
+      h-dvh
       overflow-hidden
-      bg-white
-      transition-all
-      duration-700
+      bg-[#09090B]
     "
   >
 
-    <!-- iPhone Frame -->
     <section
       class="
-        relative
-        w-[390px]
-        h-[844px]
-        overflow-hidden
-        rounded-[55px]
-        border-[10px]
-        border-black
-        bg-[#050505]
-        shadow-2xl
+        flex
+        h-full
+        flex-col
+        items-center
+        px-4
+        min-[390px]:px-5
+        min-[412px]:px-6
       "
     >
 
-      <!-- Status Bar -->
-      <header
+      <!-- Title -->
+
+      <div
         class="
-          absolute
-          top-[18px]
-          left-0
-          z-40
-          flex
-          items-center
-          justify-between
-          w-full
-          px-[28px]
-          text-white
+          mt-[24px]
+          min-[390px]:mt-8
+          min-[412px]:mt-10
+          text-center
+          leading-tight
         "
       >
 
-        <span
+        <h1
           class="
-            text-[15px]
-            font-semibold
+            text-[24px]
+            min-[390px]:text-[28px]
+            min-[412px]:text-[30px]
+            font-bold
+            text-white
           "
         >
-          9:41
-        </span>
+          Kenali dirimu.
+        </h1>
+
+        <h1
+          class="
+            text-[24px]
+            min-[390px]:text-[28px]
+            min-[412px]:text-[30px]
+            font-bold
+            text-white
+          "
+        >
+          Temukan yang
+        </h1>
+
+        <h1
+          class="
+            text-[24px]
+            min-[390px]:text-[28px]
+            min-[412px]:text-[30px]
+            font-bold
+            text-[#7C3AED]
+          "
+        >
+          mirip denganmu.
+        </h1>
+
+      </div>
+
+      <!-- Features -->
+
+      <div
+        class="
+          mt-[24px]
+          min-[390px]:mt-8
+          w-full
+          max-w-[328px]
+          min-[390px]:max-w-[340px]
+          min-[412px]:max-w-[360px]
+          space-y-[16px]
+        "
+      >
+
+        <!-- Card 1 -->
 
         <div
           class="
             flex
             items-center
-            gap-[6px]
+            gap-[12px]
+            min-[390px]:gap-4
+            h-[112px]
+            min-[390px]:h-[118px]
+            min-[412px]:h-[124px]
+            rounded-[16px]
+            border-[1px]
+            border-[#7C3AED]
+            bg-[#18181B]
+            px-4
           "
         >
 
-          <img
-            src="/icons/signal.svg"
-            alt="Signal"
-            class="h-[12px]"
+          <div
+            class="
+              flex
+              h-[80px]
+              w-[80px]
+
+              min-[390px]:h-[84px]
+              min-[390px]:w-[84px]
+
+              min-[412px]:h-[88px]
+              min-[412px]:w-[88px]
+
+              shrink-0
+
+              items-center
+              justify-center
+
+              rounded-full
+              border
+              border-[#7C3AED]
+            "
           >
 
-          <img
-            src="/icons/wifi.svg"
-            alt="WiFi"
-            class="h-[12px]"
-          >
+            <img
+              src="/images/onboarding/2/icons/personality.png"
+              alt="Music Personality"
+              class="
+                h-[48px]
+                w-[48px]
+                object-contain
+              "
+            >
 
-          <img
-            src="/icons/battery.svg"
-            alt="Battery"
-            class="h-[12px]"
-          >
+          </div>
+
+          <div class="flex-1">
+
+            <h3
+              class="
+                text-[18px]
+                min-[390px]:text-[19px]
+                min-[412px]:text-[20px]
+                font-bold
+                text-white
+              "
+            >
+              Music Personality
+            </h3>
+
+            <p
+              class="
+                mt-1
+                text-[14px]
+                min-[390px]:text-[15px]
+                leading-[20px]
+                text-[#A1A1AA]
+              "
+            >
+              kami menganalisis preferensi
+              musikmu untuk menemukan
+              identitas musikmu.
+            </p>
+
+          </div>
 
         </div>
 
-      </header>
+        <!-- Card 2 -->
 
-      <!-- Dynamic Island -->
-      <div
-        class="
-          absolute
-          top-[12px]
-          left-1/2
-          z-50
-          w-[120px]
-          h-[35px]
-          rounded-full
-          bg-black
-          -translate-x-1/2
-        "
-      ></div>
-
-      <!-- Skip -->
-      <button
-        id="skipButton"
-        class="
-          absolute
-          top-[85px]
-          right-[30px]
-          z-30
-          text-[16px]
-          font-medium
-          text-[#A1A1AA]
-          transition-colors
-          duration-200
-          active:text-[#EDE9FE]
-        "
-      >
-        Lewati
-      </button>
-
-      <!-- Heading -->
-      <section
-        class="
-          absolute
-          top-[110px]
-          left-[16px]
-          z-20
-          text-white
-        "
-      >
-
-        <h1
+        <div
           class="
-            text-[32px]
-            font-bold
+            flex
+            items-center
+            gap-[12px]
+            min-[390px]:gap-4
+            h-[112px]
+            min-[390px]:h-[118px]
+            min-[412px]:h-[124px]
+            rounded-[16px]
+            border-[1px]
+            border-[#7C3AED]
+
+            bg-[#18181B]
+
+            px-4
           "
         >
-          Playlist sesuai
-        </h1>
 
-        <h1
+          <div
+            class="
+              flex
+              h-[80px]
+              w-[80px]
+
+              min-[390px]:h-[84px]
+              min-[390px]:w-[84px]
+
+              min-[412px]:h-[88px]
+              min-[412px]:w-[88px]
+
+              shrink-0
+
+              items-center
+              justify-center
+
+              rounded-full
+              border
+              border-[#7C3AED]
+            "
+          >
+
+            <img
+              src="/images/onboarding/2/icons/match.png"
+              alt="Music Match"
+              class="
+                h-[52px]
+                w-[52px]
+                object-contain
+              "
+            >
+
+          </div>
+
+          <div class="flex-1">
+
+            <h3
+              class="
+                text-[18px]
+                min-[390px]:text-[19px]
+                min-[412px]:text-[20px]
+                font-bold
+                text-white
+              "
+            >
+              Music Match
+            </h3>
+
+            <p
+              class="
+                mt-1
+                text-[14px]
+                min-[390px]:text-[15px]
+                leading-[20px]
+                text-[#A1A1AA]
+              "
+            >
+              Temukan orang yang selera
+              musiknya mirip denganmu
+              hingga 95%.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div
           class="
-            text-[32px]
-            font-bold
+            flex
+            items-center
+            gap-[12px]
+            min-[390px]:gap-4
+            h-[112px]
+            min-[390px]:h-[118px]
+            min-[412px]:h-[124px]
+            rounded-[16px]
+            border-[1px]
+            border-[#7C3AED]
+
+            bg-[#18181B]
+
+            px-4
           "
         >
-          selera kamu
-        </h1>
 
-      </section>
+          <div
+            class="
+              flex
+              h-[80px]
+              w-[80px]
 
-      <!-- Description -->
-      <section
-        class="
-          absolute
-          top-[240px]
-          left-[16px]
-          z-20
-          text-white
-        "
-      >
+              min-[390px]:h-[84px]
+              min-[390px]:w-[84px]
 
-        <p
-          class="
-            text-[20px]
-          "
-        >
-          Buat playlist favoritmu,
-        </p>
+              min-[412px]:h-[88px]
+              min-[412px]:w-[88px]
 
-        <p
-          class="
-            text-[20px]
-          "
-        >
-          simpan, dan dengarkan
-        </p>
+              shrink-0
 
-        <p
-          class="
-            text-[20px]
-          "
-        >
-          kapan saja.
-        </p>
+              items-center
+              justify-center
 
-      </section>
+              rounded-full
+              border
+              border-[#7C3AED]
+            "
+          >
 
-      <!-- Hero -->
-      <div
-        class="
-          absolute
-          top-[320px]
-          left-1/2
-          z-10
-          w-[390px]
-          h-[422px]
-          max-w-none
-          -translate-x-1/2
-        "
-      >
+            <img
+              src="/images/onboarding/2/icons/community.png"
+              alt="Music Community"
+              class="
+                h-[52px]
+                w-[52px]
+                object-contain
+              "
+            >
 
-        <img
-          src="/images/onboarding/2/dark-mode.png"
-          alt="Playlist Preview"
-          class="
-            w-full
-            object-contain
-            scale-110
-          "
-        >
+          </div>
+
+          <div class="flex-1">
+
+            <h3
+              class="
+                text-[18px]
+                min-[390px]:text-[19px]
+                min-[412px]:text-[20px]
+                font-bold
+                text-white
+              "
+            >
+              Music Community
+            </h3>
+
+            <p
+              class="
+                mt-1
+                text-[14px]
+                min-[390px]:text-[15px]
+                leading-[20px]
+                text-[#A1A1AA]
+              "
+            >
+              Gabung komunitas, berbagi
+              cerita, dan tumbuh bersama
+              lewat musik.
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
       <!-- Pagination -->
+
       <div
         class="
-          absolute
-          bottom-[140px]
-          left-1/2
-          z-20
+          mt-6
+
+        min-[390px]:mt-8
           flex
           items-center
-          gap-[12px]
-          -translate-x-1/2
+          gap-[10px]
         "
       >
 
         <div
           class="
-            w-[10px]
             h-[10px]
-            rounded-full
-            bg-[#A1A1AA]
-          "
-        ></div>
-
-        <div
-          class="
             w-[10px]
-            h-[10px]
             rounded-full
             bg-white
           "
         ></div>
 
+        <div
+          class="
+            h-[10px]
+            w-[10px]
+            rounded-full
+            bg-[#A1A1AA]
+          "
+        ></div>
+
       </div>
 
+      <!-- Spacer -->
+
+      <div class="flex-1"></div>
+
       <!-- Button -->
+
       <button
-        id="nextButton"
         class="
-          absolute
-          bottom-[55px]
-          left-1/2
-          z-20
-          flex
-          items-center
-          justify-center
-          w-[358px]
-          h-[56px]
+          mb-[32px]
+          min-[390px]:mb-10
+          min-[412px]:mb-12
+
+          h-[53px]
+          min-[390px]:h-[56px]
+          
+          w-full
+
+          max-w-[328px]
+          min-[390px]:max-w-[340px]
+          min-[412px]:max-w-[360px]
           rounded-[16px]
+
           bg-[#7C3AED]
-          text-white
+
           text-[16px]
           font-semibold
-          -translate-x-1/2
+          text-white
+
           transition-all
           duration-300
+
           hover:bg-[#8B5CF6]
-          active:bg-[#6D28D9]
           active:scale-[0.98]
-          hover:scale-[1.02]
         "
       >
-        Lanjut
+        Mulai
       </button>
-
-      <!-- Home Indicator -->
-      <div
-        class="
-          absolute
-          bottom-[10px]
-          left-1/2
-          z-30
-          w-[148px]
-          h-[5px]
-          rounded-full
-          bg-white
-          -translate-x-1/2
-        "
-      ></div>
 
     </section>
 
   </main>
-
-  <script>
-
-  </script>
 
 </body>
 
