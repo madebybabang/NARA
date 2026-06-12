@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NARA - Splash 02</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body
+  class="
+    overflow-hidden
+    bg-[#09090B]
+    font-['Inter']
+  "
+>
+
+  <main
+    class="
+      h-dvh
+      overflow-hidden
+      bg-[#09090B]
+    "
+  >
+
+    <section
+      class="
+        flex
+        h-full
+        flex-col
+        items-center
+      "
+    >
+
+      <!-- Top Space -->
+
+      <div class="h-[64px]"></div>
+
+      <!-- Logo -->
+
+      <img
+        src="/images/logo/logo-utama.png"
+        alt="NARA Logo"
+        class="
+          w-[160px]
+          scale-[2]
+          object-contain
+        "
+      >
+
+      <!-- NARA MUSIC -->
+
+      <img
+        src="/images/logo/nara-music-teks.png"
+        alt="NARA Music"
+        class="
+          mt-[64px]
+
+          w-[224px]
+
+          min-[390px]:w-[232px]
+
+          min-[412px]:w-[240px]
+
+          object-contain
+        "
+      >
+
+      <!-- Tagline -->
+
+      <div
+        class="
+          mt-[64px]
+
+          text-center
+        "
+      >
+
+        <h2
+          class="
+            text-[18px]
+            font-medium
+            text-[#7C3AED]
+          "
+        >
+          Music. Identity. Community.
+        </h2>
+
+        <p
+          class="
+            mt-[8px]
+
+            text-[18px]
+            font-medium
+            text-[#A1A1AA]
+          "
+        >
+          All in one place
+        </p>
+
+      </div>
+
+      <!-- Push Loading Down -->
+
+      <div class="flex-1"></div>
+
+      <!-- Smart Loading -->
+
+      <div
+        class="
+          mb-[64px]
+
+          min-[390px]:mb-[72px]
+
+          min-[412px]:mb-[80px]
+        "
+      >
+
+        <div
+          class="
+            relative
+
+            h-[5px]
+            w-[156px]
+
+            overflow-hidden
+
+            rounded-full
+
+            bg-[#27272A]
+          "
+        >
+
+          <div
+            class="
+              absolute
+              top-0
+
+              h-full
+              w-[42px]
+
+              rounded-full
+
+              bg-[#7C3AED]
+            "
+            id="loading-bar"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <style>
+
+    #loading-bar {
+
+      animation:
+        smartLoading 2s ease-in-out infinite;
+
+    }
+
+    @keyframes smartLoading {
+
+      0% {
+        transform: translateX(-100%);
+      }
+
+      50% {
+        transform: translateX(270%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+
+    }
+
+  </style>
+
+</body>
+
+</html>
